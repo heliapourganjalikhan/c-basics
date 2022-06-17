@@ -11,15 +11,19 @@ int main()
     cout << "Host : \n" ;
     cin >> hostNum ;
     
-    system("clear");
+    system("clear"); 
 
     cout << "Guest :\n";
     cin >> guestGuess ;
-
-    if (hostNum == guestGuess)
+ 
+    //using ternary(conditional) operator
+    (hostNum == guestGuess) ? cout << "Correct! \n" : cout << "Failed! \n";
+    
+    //using if/else statement
+   /*if (hostNum == guestGuess)
         cout << "Correct!\n";
     else 
-        cout << "Failed!\n";    
+        cout << "Failed!\n"; */    
 
 
 
